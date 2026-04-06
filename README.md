@@ -68,7 +68,7 @@ Input (44 features, seq_len=60)
 ```
 Total parameters: 1,243,521
 ---
-Feature Engineering (44 features)
+## Feature Engineering (44 features)
 
 Category	Features
 
@@ -85,7 +85,7 @@ Volatility	ATR(5/14), Bollinger(20/40), Realised vol(5/20), Parkinson vol
 Microstructure	Volume ratio, VWAP distance, London session dummy
 
 ---
-Walk-Forward Backtest
+## Walk-Forward Backtest
 
 5 folds — expanding training window, fixed-size OOS test
 
@@ -96,7 +96,7 @@ Transaction cost model: 2 bps round-trip + 1 bp slippage
 Signal: logit > 0 → long (+1), logit ≤ 0 → short (−1)
 
 ---
-Dashboard Output
+## Dashboard Output
 
 `alphanet_dashboard.png` — 8-panel dashboard:
 
@@ -117,7 +117,7 @@ Sharpe ratio by fold
 OOS accuracy by fold
 
 ---
-References
+## References
 
 Vaswani et al. (2017). Attention Is All You Need. NeurIPS.
 
